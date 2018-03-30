@@ -10,9 +10,14 @@ import Foundation
 
 struct Images {
     static var urls : [String] = [
-        "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/25937026477_4b7949e87d_o.jpg",
-        "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/iss054e005626_lrg.jpg",
-        "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/40528908571_b5d655f369_o.jpg",
-        "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/mcmurdoiceberg_pho_2017333_lrg.jpg"
+        "https://www.wallpaperup.com/uploads/wallpapers/2016/06/24/991808/9ab236cccae5470451c20329ca43ec6b-1000.jpg",
+        "https://www.wallpaperup.com/uploads/wallpapers/2014/01/12/225293/cd89bd1f8168a20c4d6284036a00a45b.jpg",
+        "https://www.wallpaperup.com/uploads/wallpapers/2014/10/21/489485/b807c2282ab0a491bd5c5c1051c6d312-700.jpg",
+        "https://www.wallpaperup.com/uploads/wallpapers/2016/06/24/991640/24d24526389da7b23e893cb4cc5a69bc-700.jpg",
+        "https://www.wallpaperup.com/uploads/wallpapers/2015/03/06/633166/e8d825bde9f2127330224dbd1570e457-1000.jpg",
+        "https://www.wallpaperup.com/uploads/wallpapers/2016/06/24/991617/f269e3f247e7d6bbe62ce21255388188-1000.jpg",
+        "https://www.wallpaperup.com/uploads/wallpapers/2016/06/24/991808/9ab236cccae5470451c20329ca43ec6b-1000.jpg",
+        "https://www.wallpaperup.com/uploads/wallpapers/2014/01/12/225293/cd89bd1f8168a20c4d6284036a00a45b.jpg",
+        "https://www.wallpaperup.com/uploads/wallpapers/2014/10/21/489485/b807c2282ab0a491bd5c5c1051c6d312-700.jpg"
     ]
 }

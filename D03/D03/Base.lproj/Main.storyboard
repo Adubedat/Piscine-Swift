@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HFy-2Q-p5r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OFS-4L-cUZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,16 +39,22 @@
                                                 <constraint firstAttribute="width" constant="242" id="oOa-hA-50s"/>
                                             </constraints>
                                         </imageView>
+                                        <activityIndicatorView opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="eCb-4l-7vt">
+                                            <rect key="frame" x="111" y="97" width="20" height="20"/>
+                                        </activityIndicatorView>
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="eCb-4l-7vt" firstAttribute="centerY" secondItem="05N-AT-J1G" secondAttribute="centerY" id="890-ST-2uM"/>
                                     <constraint firstItem="Do7-a5-K9L" firstAttribute="centerX" secondItem="05N-AT-J1G" secondAttribute="centerX" id="OKO-Tb-D2M"/>
+                                    <constraint firstItem="eCb-4l-7vt" firstAttribute="centerX" secondItem="05N-AT-J1G" secondAttribute="centerX" id="Vzc-LD-aiv"/>
                                     <constraint firstItem="Do7-a5-K9L" firstAttribute="height" secondItem="05N-AT-J1G" secondAttribute="height" id="gHC-Bm-5aW"/>
                                     <constraint firstItem="Do7-a5-K9L" firstAttribute="centerY" secondItem="05N-AT-J1G" secondAttribute="centerY" id="mAy-Dl-QpT"/>
                                     <constraint firstItem="Do7-a5-K9L" firstAttribute="width" secondItem="05N-AT-J1G" secondAttribute="width" id="yB0-Wh-Awq"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="activityMonitor" destination="eCb-4l-7vt" id="rum-j9-Yuc"/>
                                     <outlet property="imageView" destination="Do7-a5-K9L" id="pGC-Hv-u6C"/>
                                 </connections>
                             </collectionViewCell>
@@ -57,14 +64,66 @@
                             <outlet property="delegate" destination="HFy-2Q-p5r" id="oK9-oE-V4P"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" id="6hK-23-NQe"/>
                     <connections>
                         <outlet property="collectionView" destination="wTD-gv-Ow7" id="wZU-xH-4Gr"/>
                         <outlet property="imgCollectionView" destination="wTD-gv-Ow7" id="ciI-Ep-FaC"/>
+                        <segue destination="1RS-IN-3i4" kind="show" identifier="scrollViewSegue" id="X5m-aZ-4zB"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYH-JG-FPt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653.60000000000002" y="123.68815592203899"/>
+            <point key="canvasLocation" x="992.79999999999995" y="123.68815592203899"/>
+        </scene>
+        <!--Scroll View Controller-->
+        <scene sceneID="uHl-p7-kHJ">
+            <objects>
+                <viewController id="1RS-IN-3i4" customClass="ScrollViewController" customModule="D03" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fbm-DY-dQi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sV6-Yl-QdP">
+                                <rect key="frame" x="-0.5" y="32" width="375" height="667"/>
+                                <connections>
+                                    <outlet property="delegate" destination="1RS-IN-3i4" id="cpP-Qf-EjT"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sV6-Yl-QdP" firstAttribute="height" secondItem="Fbm-DY-dQi" secondAttribute="height" id="Grq-r5-cMO"/>
+                            <constraint firstItem="sV6-Yl-QdP" firstAttribute="width" secondItem="Fbm-DY-dQi" secondAttribute="width" id="Wbx-gy-EEI"/>
+                            <constraint firstItem="sV6-Yl-QdP" firstAttribute="centerX" secondItem="C1L-1P-Nlh" secondAttribute="centerX" id="yNC-qz-8Lc"/>
+                            <constraint firstItem="sV6-Yl-QdP" firstAttribute="centerY" secondItem="C1L-1P-Nlh" secondAttribute="centerY" id="zEG-Xy-zQK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="C1L-1P-Nlh"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollViewImage" destination="sV6-Yl-QdP" id="dRE-XP-y2G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MTf-Xb-7bf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1759" y="124"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vBB-wG-ncF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OFS-4L-cUZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="usL-4g-9wd">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HFy-2Q-p5r" kind="relationship" relationship="rootViewController" id="cXL-fY-nVc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lbN-a5-wr9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="124"/>
         </scene>
     </scenes>
 </document>

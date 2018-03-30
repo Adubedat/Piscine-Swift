@@ -15,6 +15,7 @@
 		6E2F9AB9206D8CFA00455395 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F9AB8206D8CFA00455395 /* CollectionViewController.swift */; };
 		6E2F9ABB206D907700455395 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F9ABA206D907700455395 /* CollectionViewCell.swift */; };
 		6E2F9ABD206D944100455395 /* UrlList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F9ABC206D944100455395 /* UrlList.swift */; };
+		6EC316DB206E73DB00A5BBBE /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC316DA206E73DB00A5BBBE /* ScrollViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		6E2F9AB8206D8CFA00455395 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		6E2F9ABA206D907700455395 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		6E2F9ABC206D944100455395 /* UrlList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlList.swift; sourceTree = "<group>"; };
+		6EC316DA206E73DB00A5BBBE /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				6E2F9AA8206D860E00455395 /* ViewController.swift */,
 				6E2F9AB8206D8CFA00455395 /* CollectionViewController.swift */,
 				6E2F9ABA206D907700455395 /* CollectionViewCell.swift */,
+				6EC316DA206E73DB00A5BBBE /* ScrollViewController.swift */,
 				6E2F9ABC206D944100455395 /* UrlList.swift */,
 				6E2F9AAA206D860E00455395 /* Main.storyboard */,
 				6E2F9AAD206D860E00455395 /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E2F9AB9206D8CFA00455395 /* CollectionViewController.swift in Sources */,
+				6EC316DB206E73DB00A5BBBE /* ScrollViewController.swift in Sources */,
 				6E2F9ABD206D944100455395 /* UrlList.swift in Sources */,
 				6E2F9AA9206D860E00455395 /* ViewController.swift in Sources */,
 				6E2F9ABB206D907700455395 /* CollectionViewCell.swift in Sources */,

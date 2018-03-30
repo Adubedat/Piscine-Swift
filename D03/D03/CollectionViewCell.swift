@@ -10,16 +10,7 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var activityMonitor: UIActivityIndicatorView!
     @IBOutlet weak var imageView: UIImageView!
     
-    var imageUrl : String? {
-        didSet {
-            if let urlString = imageUrl {
-                let url = URL(string: urlString)
-                if let data = try? Data(contentsOf: url!, options: .uncached) {
-                    imageView.image = UIImage(data: data)
-                }
-            }
-        }
-    }
 }
